@@ -1,0 +1,14 @@
+zuul:
+  routes:
+    oauth:
+      path: /oauth/**
+      url: http://127.0.0.1:8080/oauth
+    logging:
+      path: /logging/**
+      url: http://127.0.0.1:8080/logging
+ribbon:
+ eureka:
+  enabled: false
+eureka:
+ client:
+  enabled: false
